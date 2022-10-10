@@ -23,6 +23,6 @@ urlpatterns = [
    path('admin/', admin.site.urls),
    path('maths/', include("maths.urls")),
    path('greetings/', lambda request: HttpResponse("Hello Lord in my World!! :) ")),
-   path('greetings/<str:a>', lambda request, a: HttpResponse(f"Hello {a} in my World!! :)"))
+   path('greetings/<str:a>', lambda request, a: HttpResponse(f"Hello {a.capitalize()} in my World!! :)"))
 ]
 
