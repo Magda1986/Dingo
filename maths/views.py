@@ -4,7 +4,8 @@ from django.template import loader
 
 
 def math(request):
-    return HttpResponse("Tu będzie matma")
+    t = loader.get_template("maths/main.html")
+    return HttpResponse(t.render())
 
 
 def add(request, a, b):

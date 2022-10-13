@@ -7,14 +7,18 @@
 <body style="background: lightGrey ; font-family: Arial ;>
 <div id="content">
    <div id="header">
-       <h1>To jest część stała szablonu głównego</h1>
+       <h1>Kalkulator</h1>
    </div>
    <div id="inner-content">
        {% block content %}
-           To jest blok kodu. W innych szablonach możemy go nadpisać
+           <h2>Wybierz działanie, które chcesz wykonać:</h2>
+       <li> add/x/y - dodawanie </li>
+       <li> sub/x/y - odejmowanie</li>
+       <li> mul/x/y - mnożenie</li>
+       <li> div/x/y - dzielenie</li>
        {% endblock %}
    </div>
-<img src="https://www.kaliszplastyk.pl/userdata/public/gfx/1330/159512SN_ALL.jpg" alt="Kalkulator" title="image" width="600" height="350" >
+<img src="https://www.kaliszplastyk.pl/userdata/public/gfx/1330/159512SN_ALL.jpg" alt="Kalkulator" title="image" width="600" height="350" border="2" style="margin: 20px 0px;" >
 </div>
 </body>
 </html>
